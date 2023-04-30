@@ -1,6 +1,6 @@
 # ohmyfood
 
-## OpenClassrooms poroject
+## Fourth project of the OpenClassrooms "web integrator" training
 
 ### Mobile model:
 

@@ -1,29 +1,39 @@
+/*###################*/
+/*##### GENERAL #####*/
+/*###################*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
 /*#######################*/
 /*##### RESTAURANTS #####*/
 /*#######################*/
 #restaurants {
   background-color: grey;
 }
-
-.card-link {
+#restaurants .card-link {
   border: green 2px solid;
   background-color: yellow;
   display: flex;
   flex-direction: column;
   width: 90%;
 }
-
-.card {
+#restaurants .card-link .card {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-
-.card img {
+#restaurants .card-link .card img {
   border: red 2px solid;
   object-fit: cover;
   height: 300px;
   width: 100%;
 }
+
+/*###########################*/
+/*##### END RESTAURANTS #####*/
+/*###########################*/
 
 /*# sourceMappingURL=style.css.map */

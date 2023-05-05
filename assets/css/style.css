@@ -1,3 +1,11 @@
+/*########################*/
+/*##### GOOGLE FONTS #####*/
+/*########################*/
+@import url(https://fonts.googleapis.com/css?family=Shrikhand);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/*##################*/
+/*##### COLORS #####*/
+/*##################*/
 /*###################*/
 /*##### GENERAL #####*/
 /*###################*/
@@ -5,6 +13,94 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+}
+
+/*##################*/
+/*##### HEADER #####*/
+/*##################*/
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+.header__logo {
+  width: 170px;
+  height: 30px;
+}
+
+/*####################*/
+/*##### LOCATION #####*/
+/*####################*/
+.location {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px inset;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+}
+.location__icon {
+  margin-right: 25px;
+  font-size: 20px;
+}
+.location__text {
+  font-family: "Roboto";
+}
+
+/*########################*/
+/*##### PRESENTATION #####*/
+/*########################*/
+.presentation {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 10px 30px 30px;
+}
+.presentation h1 {
+  font-family: "Roboto";
+  width: 70%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.presentation p {
+  font-family: "Roboto";
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+}
+.presentation .link__restaurant {
+  border: #9356DC 2px solid;
+  background-color: #9356DC;
+  color: white;
+  font-family: "Roboto";
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 15px 20px 15px 20px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*#######################*/
+/*##### FUNCTIONING #####*/
+/*#######################*/
+.functioning-section {
+  border: red 2px solid;
+}
+.functioning-section h2 {
+  border: blue 2px solid;
+  font-family: "Roboto";
+  margin-top: 40px;
+  letter-spacing: 0.5px;
+}
+.functioning-section .functioning {
+  border: yellow 2px solid;
 }
 
 /*#######################*/

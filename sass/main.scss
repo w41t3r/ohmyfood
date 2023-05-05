@@ -1,31 +1,137 @@
+@import "./Utils/variables";
+
 /*###################*/
 /*##### GENERAL #####*/
 /*###################*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+
+/*##################*/
+/*##### HEADER #####*/
+/*##################*/
+
+.header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+
+    &__logo {
+        width: 170px;
+        height: 30px;
+    }
+}
+
+/*####################*/
+/*##### LOCATION #####*/
+/*####################*/
+
+.location {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px inset;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+
+    &__icon {
+        margin-right: 25px;
+        font-size: 20px;
+    }
+
+    &__text {
+        font-family: $text-font;
+    }
+}
+
+/*########################*/
+/*##### PRESENTATION #####*/
+/*########################*/
+
+.presentation {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 10px 30px 30px;
+
+    & h1 {
+        font-family: $text-font;
+        width: 70%;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: .5px;
+    }
+
+    & p {
+        font-family: $text-font;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+    & .link__restaurant {
+        border: $primary-color 2px solid;
+        background-color: $primary-color;
+        color: white;
+        font-family: $text-font;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 15px 20px 15px 20px;
+        border-radius: 30px 30px 30px 30px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+}
+
+/*#######################*/
+/*##### FUNCTIONING #####*/
+/*#######################*/
+
+.functioning-section {
+    border: red 2px solid;
+
+    & h2 {
+        border: blue 2px solid;
+        font-family: $text-font;
+        margin-top: 40px;
+        letter-spacing: .5px;
+    }
+
+    & .functioning {
+        border: yellow 2px solid;
+    }
 }
 
 /*#######################*/
 /*##### RESTAURANTS #####*/
 /*#######################*/
 
-#restaurants{
+#restaurants {
     background-color: grey;
-    .card-link{
+
+    .card-link {
         border: green 2px solid;
         background-color: yellow;
         display: flex;
         flex-direction: column;
         width: 90%;
-        .card{
+
+        .card {
             display: flex;
             flex-direction: column;
             width: 100%;
         }
-        .card img{
+
+        .card img {
             border: red 2px solid;
             object-fit: cover;
             height: 300px;

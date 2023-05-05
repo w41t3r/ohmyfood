@@ -1,14 +1,19 @@
 {
-  "name": "sass",
+  "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Fourth project of the OpenClassrooms \"web integrator\" training",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./assets/css/style.css --style expanded"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w41t3r/ohmyfood.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "sass": "^1.62.1"
-  }
+  "bugs": {
+    "url": "https://github.com/w41t3r/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/w41t3r/ohmyfood#readme"
 }

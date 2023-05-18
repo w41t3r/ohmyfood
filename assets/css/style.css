@@ -21,17 +21,11 @@ a:visited {
 /*##### HEADER #####*/
 /*##################*/
 .header {
-  border: blue 2px solid;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 15px;
-}
-.header .back-arrow {
-  margin-left: -75px;
-  color: #353535;
-  font-size: 20px;
 }
 .header__logo {
   width: 170px;
@@ -94,7 +88,7 @@ a:visited {
 }
 .presentation .link__restaurants:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 15px;
-  background: linear-gradient(to left top, #ae80e5, #fface8);
+  background: linear-gradient(to left top, #a16be0, #ff93e1);
 }
 .presentation .link__restaurants .link__text {
   color: white;
@@ -238,14 +232,16 @@ a:visited {
   padding-top: 15px;
   padding-bottom: 5px;
 }
-#restaurants .card-link .card .card-content .card-icon {
+#restaurants .card-link .card .card-content .heart__icon {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 25px;
-  height: 70px;
+  height: 28px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
-#restaurants .card-link .card .card-content .card-icon:hover {
+#restaurants .card-link .card .card-content .heart__icon:hover {
   background: linear-gradient(to left top, #9356DC, #FF79DA);
   color: linear-gradient(to left top, #9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -313,8 +309,20 @@ a:visited {
 /*##### RESTAURANTS PAGES #####*/
 /*#############################*/
 /*#############################*/
-.container__img {
+.header {
+  height: 50px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+.header .back-arrow {
+  margin-left: -75px;
+  color: #353535;
+  font-size: 20px;
+}
+
+.container__img {
   height: 260px;
   margin-bottom: -50px;
   position: relative;
@@ -326,9 +334,8 @@ a:visited {
 }
 
 .menu {
-  border: red 2px solid;
-  display: flex;
   background-color: #F6F6F6;
+  display: flex;
   flex-direction: column;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -342,20 +349,20 @@ a:visited {
   justify-content: space-between;
 }
 .menu__title h1 {
-  border: blue 2px solid;
   font-family: "Shrikhand";
   font-weight: 500;
   font-size: 30px;
   margin-left: 10px;
 }
-.menu__title .card-icon {
-  border: green 2px solid;
+.menu__title .heart__icon {
   display: flex;
   align-items: center;
   font-size: 25px;
-  margin-right: 30px;
+  height: 28px;
+  margin-top: 8px;
+  margin-left: 20px;
 }
-.menu__title .card-icon:hover {
+.menu__title .heart__icon:hover {
   background: linear-gradient(to left top, #9356DC, #FF79DA);
   color: linear-gradient(to left top, #9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -364,14 +371,13 @@ a:visited {
   -moz-text-fill-color: transparent;
   font-weight: bold;
 }
-.menu .section {
-  border: orange 2px solid;
+.menu .restaurant {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 35px;
 }
-.menu .section h2 {
+.menu .restaurant h2 {
   text-transform: uppercase;
   font-size: 17px;
   margin-bottom: 5px;
@@ -382,7 +388,7 @@ a:visited {
   border-bottom-color: #99E2D0;
   margin-left: -80%;
 }
-.menu .section .restaurant__card {
+.menu .restaurant__card {
   border-radius: 20px;
   display: flex;
   flex-direction: row;
@@ -395,6 +401,14 @@ a:visited {
   font-family: "Roboto";
   background-color: #FFFFFF;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px;
+}
+.menu .restaurant__card .restaurant__description {
+  margin-top: 3px;
+  font-size: 15px;
+}
+.menu .restaurant__card .restaurant__price {
+  position: relative;
+  top: 22px;
 }
 .menu .order__button__container {
   display: flex;
@@ -503,6 +517,52 @@ a:visited {
   }
   .footer .footer__link {
     font-size: 16px;
+  }
+  /*#############################*/
+  /*#############################*/
+  /*##### RESTAURANTS PAGES #####*/
+  /*#############################*/
+  /*#############################*/
+  .header {
+    height: 80px;
+  }
+  .header .back-arrow {
+    margin-left: 0;
+    left: 20px;
+    top: 40px;
+    position: absolute;
+    color: #353535;
+    font-size: 20px;
+  }
+  .header__logo {
+    height: 35px;
+    width: 200px;
+  }
+  .container__img {
+    height: 390px;
+  }
+  .container__img img {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+  }
+  .menu {
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+  }
+  .menu__title {
+    justify-content: center;
+  }
+  .menu__title .card-icon {
+    margin-left: 25px;
+  }
+  .restaurant {
+    width: 70%;
+  }
+  .restaurant h2 {
+    width: 6%;
   }
 }
 

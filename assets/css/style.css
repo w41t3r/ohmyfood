@@ -331,6 +331,7 @@ a:visited {
 .container__img img {
   object-fit: cover;
   height: 100%;
+  width: 100%;
 }
 
 .menu {
@@ -389,7 +390,32 @@ a:visited {
   margin-left: -80%;
 }
 .menu .restaurant__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   border-radius: 20px;
+  height: 38px;
+  margin-top: 15px;
+  width: 85%;
+  padding: 15px;
+  font-family: "Roboto";
+  background-color: #FFFFFF;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px;
+  transition: transform 5s ease-in-out;
+}
+.menu .restaurant__card .restaurant__description {
+  margin-top: 3px;
+  font-size: 15px;
+}
+.menu .restaurant__card .restaurant__price {
+  position: relative;
+  top: 22px;
+}
+.menu .restaurant__card .div-icon {
+  display: none;
+}
+.menu .restaurant__card:hover {
+  border: green 2px solid;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -402,13 +428,33 @@ a:visited {
   background-color: #FFFFFF;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px;
 }
-.menu .restaurant__card .restaurant__description {
+.menu .restaurant__card:hover .restaurant__description {
   margin-top: 3px;
   font-size: 15px;
 }
-.menu .restaurant__card .restaurant__price {
+.menu .restaurant__card:hover .restaurant__price {
   position: relative;
   top: 22px;
+}
+.menu .restaurant__card:hover .div-icon {
+  border: yellow 2px solid;
+  display: display;
+  height: 30px;
+  background-color: #99E2D0;
+  position: relative;
+  padding: 20px 15px 20px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+  margin: -18px -20px 0 0;
+}
+.menu .restaurant__card:hover .liked__icon {
+  border: red 2px solid;
+  color: #99E2D0;
+  border-radius: 25px;
+  padding: 8px;
+  background-color: white;
 }
 .menu .order__button__container {
   display: flex;

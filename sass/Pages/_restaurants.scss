@@ -133,9 +133,9 @@
         border: green 2px solid;
 
         .div-icon {
-            border: yellow 2px solid;
             display: display;
-            height: 30px;
+            height: 28px;
+            width: 40px;
             background-color: $tertiary-color;
             position: relative;
             padding: 20px 15px 20px 15px;
@@ -143,16 +143,15 @@
             justify-content: center;
             align-items: center;
             border-radius: 0 20px 20px 0;
-            margin: -18px -20px 0 0;
+            margin: -15px -15px 0 0;
             transition: all 2s ease-in-out;
 
         }
 
         .liked__icon {
-            border: red 2px solid;
             color: $tertiary-color;
             border-radius: 25px;
-            padding: 8px;
+            padding: 3px;
             background-color: white;
 
         }

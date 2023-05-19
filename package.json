@@ -4,7 +4,9 @@
   "description": "## Fourth project of the OpenClassrooms \"web integrator\" training",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./assets/css/style.css --style expanded"
+    "sass": "sass --watch ./sass/main.scss:./assets/css/style.css --style expanded",
+    "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/prefixed/"
+
   },
   "repository": {
     "type": "git",
@@ -12,8 +14,10 @@
   },
   "author": "",
   "license": "ISC",
+
   "bugs": {
     "url": "https://github.com/w41t3r/ohmyfood/issues"
   },
-  "homepage": "https://github.com/w41t3r/ohmyfood#readme"
+  "homepage": "https://github.com/w41t3r/ohmyfood#readme",
+  "browserslist": "last 4 versions"
 }

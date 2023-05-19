@@ -1,0 +1,261 @@
+/*#############################*/
+/*#############################*/
+/*##### RESTAURANTS PAGES #####*/
+/*#############################*/
+/*#############################*/
+
+.header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+
+    .back-arrow {
+        margin-left: -75px;
+        color: $back-arrow-color;
+        font-size: 20px;
+    }
+}
+
+.container__img {
+    height: 260px;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 1;
+
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.menu {
+    background-color: $bg-light-grey;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 2;
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-family: $logo-and-titles-font;
+        font-weight: 500;
+        font-size: 30px;
+        margin-left: 10px;
+
+    }
+
+    .heart__icon--restaurant {
+        font-size: 25px;
+        height: 28px;
+        margin-top: 8px;
+        margin-right: 40px;
+
+    }
+
+    .heart__icon--restaurant:hover {
+        cursor: pointer;
+        background-image: linear-gradient(190deg, $primary-color -15%, $secondary-color 120%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        color: transparent;
+        font-weight: bold;
+        border: none;
+        transition: all 2.5s;
+
+    }
+
+    &__step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 35px;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 17px;
+            margin-bottom: 5px;
+            font-weight: 100;
+            max-width: 10%;
+            font-family: $text-font;
+            border-bottom-style: solid;
+            border-bottom-color: $tertiary-color;
+            margin-left: -80%;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 20px;
+        height: 38px;
+        margin-top: 15px;
+        width: 85%;
+        padding: 15px;
+        font-family: $text-font;
+        background-color: #FFFFFF;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px;
+
+
+        &--description {
+            margin-top: 3px;
+            font-size: 15px;
+        }
+
+        &--price {
+            position: relative;
+            top: 22px;
+            right: 5px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .div-icon {
+            display: none;
+        }
+    }
+
+    .menu__item:hover {
+        border: green 2px solid;
+
+        .div-icon {
+            border: yellow 2px solid;
+            display: display;
+            height: 30px;
+            background-color: $tertiary-color;
+            position: relative;
+            padding: 20px 15px 20px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0 20px 20px 0;
+            margin: -18px -20px 0 0;
+            transition: all 2s ease-in-out;
+
+        }
+
+        .liked__icon {
+            border: red 2px solid;
+            color: $tertiary-color;
+            border-radius: 25px;
+            padding: 8px;
+            background-color: white;
+
+        }
+    }
+
+
+    .order__button__container {
+        display: flex;
+        justify-content: center;
+
+        .order__button {
+            background: linear-gradient(to left top, $primary-color, $secondary-color);
+            font-family: $text-font;
+            margin-top: 30px;
+            margin-bottom: 25px;
+            padding: 15px 45px 15px 45px;
+            border-radius: 30px 30px 30px 30px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            color: #FFFFFF;
+            font-size: 15px;
+            border: none;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 15px;
+                @include btn-restaurants-lightening();
+            }
+        }
+    }
+}
+
+/**************************************************** Media queries ****************************************************/
+
+/***************************** Large devices (desktop, more/equal than 1024px) *****************************/
+
+@media all and (min-width: 1024px) {
+
+    /*#############################*/
+    /*#############################*/
+    /*##### RESTAURANTS PAGES #####*/
+    /*#############################*/
+    /*#############################*/
+
+    .header {
+        height: 80px;
+
+        .back-arrow {
+            margin-left: 0;
+            left: 20px;
+            top: 40px;
+            position: absolute;
+            color: $back-arrow-color;
+            font-size: 20px;
+        }
+
+        &__logo {
+            height: 35px;
+            width: 200px;
+        }
+    }
+
+    .container__img {
+        height: 390px;
+
+        img {
+            object-fit: fill;
+            height: 100%;
+            width: 100%;
+
+        }
+    }
+
+    .menu {
+        width: 60%;
+        margin-left: 20%;
+        display: flex;
+        align-items: center;
+
+        &__title {
+            justify-content: center;
+
+            .card-icon {
+                margin-left: 25px;
+            }
+
+            .heart__icon--restaurant {
+                font-size: 25px;
+                height: 28px;
+                margin-top: 8px;
+                margin-left: 40px;
+        
+            }
+        }
+        
+        &__step {
+            width: 70%;
+    
+            h2 {
+                width: 6%;
+            }
+    
+        }
+    }
+
+
+
+}

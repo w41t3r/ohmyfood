@@ -105,7 +105,7 @@
         flex-direction: row;
         justify-content: space-between;
         border-radius: 20px;
-        height: 38px;
+        height: 39px;
         margin-top: 15px;
         width: 85%;
         padding: 15px;
@@ -113,31 +113,30 @@
         background-color: #FFFFFF;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px;
 
+        &--text{
+            height: 40px;
+            width: 90%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
         h3 {
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;
-
         }
 
         &--description {
-            border: red 2px solid;
-            height: 20px;
-            white-space: nowrap;
-            max-width: 99%;
             overflow: hidden;
             text-overflow: ellipsis;
-            margin-top: 3px;
             font-size: 15px;
-
         }
 
         &--price {
-            position: relative;
-            top: 22px;
-            right: 5px;
-            display: flex;
-            justify-content: flex-end;
+            margin-top: 25px;
+            margin-right: -25px;
+            font-weight: 800;
+            transition: all 1.2s ease-in-out;
         }
 
         .div-icon {
@@ -150,7 +149,7 @@
             align-items: center;
             border-radius: 0 20px 20px 0;
             margin: -15px -15px 0 0;
-            transition: all 1.5s ease-in-out;
+            transition: all 0.7s ease-in-out;
 
             .liked__icon {
                 scale: 0;
@@ -159,27 +158,30 @@
                 border-radius: 25px;
                 padding: 3px;
                 background-color: white;
-                transition: all 1s ease-in-out;
+                transition: all 0.5s ease-in-out;
             }
         }
     }
 
     .menu__item:hover {
 
+        .menu__item--price {
+            margin-right: 5px;
+            transition: all 0.5s ease-in-out;
+        }
+
         .div-icon {
             transform: translateX(-1%);
-            height: 28px;
+            height: 29px;
             width: 30px;
             background-color: $tertiary-color;
-            position: relative;
             padding: 20px 15px 20px 15px;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 0 20px 20px 0;
             margin: -15px -15px 0 0;
-            transition: all 1s ease-in-out;
-
+            transition: all 0.5s ease-in-out;
         }
 
         .liked__icon {
@@ -188,7 +190,7 @@
             border-radius: 25px;
             padding: 3px;
             background-color: white;
-            transition: all 1.5s ease-in-out; 
+            transition: all 0.7s ease-in-out; 
             transform: translateX(-1%);
         }
     }

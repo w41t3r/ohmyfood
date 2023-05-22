@@ -447,7 +447,7 @@
 }
 .menu .heart__icon--restaurant:hover {
   cursor: pointer;
-  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  background-image: linear-gradient(to left top, #9356DC, #FF79DA);
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -490,8 +490,13 @@
 .menu__item h3 {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__item--description {
+  border: red 2px solid;
+  height: 20px;
+  white-space: nowrap;
+  max-width: 99%;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-top: 3px;

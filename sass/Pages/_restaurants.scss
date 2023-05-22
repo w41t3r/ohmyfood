@@ -67,7 +67,7 @@
 
     .heart__icon--restaurant:hover {
         cursor: pointer;
-        background: linear-gradient(to left top, $primary-color, $secondary-color);
+        background-image: linear-gradient(to left top, $primary-color, $secondary-color);
         -moz-background-clip: text;
         -moz-text-fill-color: transparent;
         -webkit-background-clip: text;
@@ -116,9 +116,15 @@
         h3 {
             overflow: hidden;
             text-overflow: ellipsis;
+            white-space: nowrap;
+
         }
 
         &--description {
+            border: red 2px solid;
+            height: 20px;
+            white-space: nowrap;
+            max-width: 99%;
             overflow: hidden;
             text-overflow: ellipsis;
             margin-top: 3px;

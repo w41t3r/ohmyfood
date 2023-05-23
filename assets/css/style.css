@@ -12,11 +12,24 @@
 .loader {
   /* = section */
   background-image: linear-gradient(to left top, #9356DC, #FF79DA);
-  height: 300px;
+  height: 40%;
+  width: 100%;
+  backdrop-filter: blur(10px);
   text-align: center;
-  line-height: 300px;
   font-size: 200%;
   font-family: "Roboto";
+  -webkit-animation: off 2s;
+  animation: off 2s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .loader__base {
   /* = loader */
@@ -694,6 +707,7 @@
 /*##### GENERAL #####*/
 /*###################*/
 *,
+::after,
 a:visited {
   margin: 0;
   padding: 0;

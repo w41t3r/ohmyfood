@@ -455,7 +455,7 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-weight: bold;
-  transition: all 3.5s;
+  transition: all 2s;
 }
 .menu__step {
   display: flex;
@@ -488,7 +488,7 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px;
 }
 .menu__item--text {
-  height: 40px;
+  height: 50px;
   width: 90%;
   white-space: nowrap;
   overflow: hidden;
@@ -497,11 +497,13 @@
 .menu__item h3 {
   overflow: hidden;
   text-overflow: ellipsis;
+  height: 50%;
 }
 .menu__item--description {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 15px;
+  height: 30px;
 }
 .menu__item--price {
   margin-top: 25px;

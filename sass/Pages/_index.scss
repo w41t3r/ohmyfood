@@ -1,3 +1,64 @@
+/*##################*/
+/*##### LOADER #####*/
+/*##################*/
+
+.loader {
+    /* = section */
+    background-image: linear-gradient(to left top, $primary-color, $secondary-color);
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 200%;
+    font-family: $text-font;
+
+    &__base {
+        /* = loader */
+        /* position: relative; */
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        vertical-align: middle;
+
+    }
+
+    &__element {
+        /* = loader-quart */
+        border-radius: 50px;
+        border: 6px solid transparent;
+        border-top-color: $secondary-color;
+        border-bottom-color: $secondary-color;
+        -webkit-animation: spin 4s linear infinite;
+        animation: spin 4s linear infinite;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border: 6px solid transparent;
+            border-top-color: $primary-color;
+            border-bottom-color: $primary-color;
+            border-radius: 50px;
+            -webkit-animation: spin 4s linear infinite;
+            animation: spin 4s linear infinite;
+            opacity: 0.6;
+        }
+
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
 
 /*##################*/
 /*##### HEADER #####*/
@@ -256,7 +317,7 @@
                         background: linear-gradient(to left top, $primary-color, $secondary-color);
                         color: linear-gradient(to left top, $primary-color, $secondary-color);
                         -webkit-background-clip: text;
-                                background-clip: text; 
+                        background-clip: text;
                         -webkit-text-fill-color: transparent;
                         -moz-background-clip: text;
                         -moz-text-fill-color: transparent;

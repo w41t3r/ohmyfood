@@ -511,7 +511,7 @@
   font-weight: 800;
   transition: all 1.2s ease-in-out;
 }
-.menu__item .div-icon {
+.menu__item .selected {
   transform: translateX(0%);
   width: 0px;
   height: 28px;
@@ -523,7 +523,7 @@
   margin: -15px -15px 0 0;
   transition: all 0.7s ease-in-out;
 }
-.menu__item .div-icon .liked__icon {
+.menu__item .selected__icon {
   scale: 0;
   transform: translateX(0%);
   color: #99E2D0;
@@ -536,7 +536,7 @@
   margin-right: 5px;
   transition: all 0.5s ease-in-out;
 }
-.menu .menu__item:hover .div-icon {
+.menu .menu__item:hover .selected {
   transform: translateX(-1%);
   height: 29px;
   width: 30px;
@@ -549,7 +549,7 @@
   margin: -15px -15px 0 0;
   transition: all 0.5s ease-in-out;
 }
-.menu .menu__item:hover .liked__icon {
+.menu .menu__item:hover .selected__icon {
   scale: 1;
   color: #99E2D0;
   border-radius: 25px;

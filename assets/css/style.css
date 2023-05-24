@@ -10,22 +10,19 @@
 /*##### LOADER #####*/
 /*##################*/
 .loader {
-  /* = section */
   background-image: linear-gradient(to left top, #9356DC, #FF79DA);
-  height: 40%;
+  height: 100%;
   width: 100%;
-  backdrop-filter: blur(10px);
-  text-align: center;
   font-size: 200%;
   font-family: "Roboto";
-  -webkit-animation: off 2s;
-  animation: off 2s;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation: off 1s;
+  animation: off 1s;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  transition: opacity 5s ease-in;
+  opacity: 0;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -71,6 +68,16 @@
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+@keyframes off {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
   }
 }
 

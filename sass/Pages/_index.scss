@@ -3,7 +3,7 @@
 /*##################*/
 
 .loader {
-    background-image: linear-gradient(to left top, $primary-color, $secondary-color);    
+    background: linear-gradient(to left top, $primary-color, $secondary-color);
     height: 100%;
     width: 100%;
     font-size: 200%;
@@ -29,8 +29,8 @@
         border: 6px solid transparent;
         border-top-color: $secondary-color;
         border-bottom-color: $secondary-color;
-        -webkit-animation: spin 4s linear infinite;
-        animation: spin 4s linear infinite;
+        -webkit-animation: spin 3s linear infinite;
+        animation: spin 3s linear infinite;
 
         &::after {
             content: "";
@@ -43,8 +43,8 @@
             border-top-color: $primary-color;
             border-bottom-color: $primary-color;
             border-radius: 50px;
-            -webkit-animation: spin 4s linear infinite;
-            animation: spin 4s linear infinite;
+            -webkit-animation: spin 3s linear infinite;
+            animation: spin 3s linear infinite;
             opacity: 0.6;
         }
 

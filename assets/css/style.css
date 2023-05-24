@@ -10,7 +10,7 @@
 /*##### LOADER #####*/
 /*##################*/
 .loader {
-  background-image: linear-gradient(to left top, #9356DC, #FF79DA);
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
   height: 100%;
   width: 100%;
   font-size: 200%;
@@ -35,8 +35,8 @@
   border: 6px solid transparent;
   border-top-color: #FF79DA;
   border-bottom-color: #FF79DA;
-  -webkit-animation: spin 4s linear infinite;
-  animation: spin 4s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
 }
 .loader__element::after {
   content: "";
@@ -49,8 +49,8 @@
   border-top-color: #9356DC;
   border-bottom-color: #9356DC;
   border-radius: 50px;
-  -webkit-animation: spin 4s linear infinite;
-  animation: spin 4s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
   opacity: 0.6;
 }
 @keyframes spin {

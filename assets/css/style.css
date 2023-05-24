@@ -15,21 +15,25 @@
   width: 100%;
   font-size: 200%;
   font-family: "Roboto";
-  -webkit-animation: display 3s;
-  animation: display 3s;
-  /*    -webkit-animation: off 1s;
+  /*    -webkit-animation: display 3s;
+      animation: display 3s;
+      -webkit-animation-delay: 3s;
+      animation-delay: 3s;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+
+      /*
+      -webkit-animation: off 1s;
       animation: off 1s;
   /*
       -webkit-transform: scale(0);
       transform: scale(0);
 
 
-
-      transition: opacity 5s ease-in;
-      opacity: 0;
   */
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  transition: z-index 6s, opacity 5s ease-in;
+  opacity: 0;
+  z-index: -1;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -72,6 +76,16 @@
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes display {
+  0% {
+    z-index: 10;
+    opacity: 1;
+  }
+  100% {
+    z-index: -1;
+    opacity: 0;
   }
 }
 @keyframes display {
@@ -293,6 +307,7 @@
   font-weight: 600;
   letter-spacing: 0.2px;
   position: absolute;
+  z-index: 1;
 }
 #restaurants .card-link .card .card-content {
   display: flex;

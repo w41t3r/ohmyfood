@@ -160,6 +160,30 @@
         }
     }
 
+    @keyframes progressive-display {
+        0% {
+            transform: translateY(60%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .menu__item:nth-of-type(1) {
+        animation: progressive-display 900ms ease-in-out;
+    }
+
+    .menu__item:nth-of-type(2) {
+        animation: progressive-display 1500ms ease-in-out;
+    }
+
+    .menu__item:nth-of-type(3) {
+        animation: progressive-display 2100ms ease-in-out;
+    }
+
     .menu__item:hover {
 
         .menu__item--price {
@@ -210,7 +234,7 @@
 
             &:hover {
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 15px;
-                @include btn-restaurants-lightening();
+                @include btn-lightening();
             }
         }
     }

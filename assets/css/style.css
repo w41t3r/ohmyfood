@@ -15,8 +15,8 @@
   width: 100%;
   font-size: 200%;
   font-family: "Roboto";
-  -webkit-animation: display both;
-  animation: display both;
+  -webkit-animation: display-loader both;
+  animation: display-loader both;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
   position: fixed;
@@ -63,7 +63,7 @@
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes display {
+@-webkit-keyframes display-loader {
   0% {
     z-index: 10;
     opacity: 1;
@@ -76,7 +76,7 @@
     opacity: 0;
   }
 }
-@keyframes display {
+@keyframes display-loader {
   0% {
     z-index: 10;
     opacity: 1;
@@ -613,6 +613,25 @@
   padding: 3px;
   background-color: white;
   transition: all 0.5s ease-in-out;
+}
+@keyframes progressive-display {
+  0% {
+    transform: translateY(60%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.menu .menu__item:nth-of-type(1) {
+  animation: progressive-display 900ms ease-in-out;
+}
+.menu .menu__item:nth-of-type(2) {
+  animation: progressive-display 1500ms ease-in-out;
+}
+.menu .menu__item:nth-of-type(3) {
+  animation: progressive-display 2100ms ease-in-out;
 }
 .menu .menu__item:hover .menu__item--price {
   margin-right: 5px;

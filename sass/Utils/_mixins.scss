@@ -1,3 +1,3 @@
-@mixin btn-restaurants-lightening {
+@mixin btn-lightening {
     background: linear-gradient(to left top, lighten($primary-color, 5%), lighten($secondary-color, 5%));
 }

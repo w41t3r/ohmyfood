@@ -8,8 +8,8 @@
     width: 100%;
     font-size: 200%;
     font-family: $text-font;
-    -webkit-animation: display both;
-    animation: display both;
+    -webkit-animation: display-loader both;
+    animation: display-loader both;
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
     position: fixed;
@@ -60,7 +60,7 @@
             }
         }
 
-        @-webkit-keyframes display {
+        @-webkit-keyframes display-loader{
             0% {
                 z-index: 10;
                 opacity: 1;
@@ -76,7 +76,7 @@
             }
         }
 
-        @keyframes display {
+        @keyframes display-loader{
             0% {
                 z-index: 10;
                 opacity: 1;
@@ -169,7 +169,7 @@
 
         &:hover {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 15px;
-            @include btn-restaurants-lightening();
+            @include btn-lightening();
         }
 
         .link__text {

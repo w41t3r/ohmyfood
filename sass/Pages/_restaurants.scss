@@ -181,7 +181,11 @@
     }
 
     .menu__item:nth-of-type(3) {
-        animation: progressive-display 2100ms ease-in-out;
+        animation: progressive-display 2300ms ease-in-out;
+    }
+
+    .menu__item:nth-of-type(4) {
+        animation: progressive-display 3300ms ease-in-out;
     }
 
     .menu__item:hover {

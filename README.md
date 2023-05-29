@@ -8,7 +8,6 @@ Your mission is to develop a “mobile first” site that lists the menus of gou
 
 ### Expected deliverables:
 
-🟣 Page content
 
 **Home page (x1):**
 
@@ -37,8 +36,6 @@ Your mission is to develop a “mobile first” site that lists the menus of gou
   - On the home page, it contains the site logo.
 
   - On the menu pages, it also contains a button to return to the home page.
-
-🟣 Graphic effects and animations
 
 Effects accessible by clicking or hovering are visible on the model. They will have to use
 CSS animations or transitions, no JavaScript or library. For all

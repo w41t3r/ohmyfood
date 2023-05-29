@@ -11,13 +11,11 @@ Your mission is to develop a “mobile first” site that lists the menus of gou
 
 **Home page (x1):**
 
-  - Display of restaurant locations. Eventually, it will be possible to choose
-  location to find restaurants near a certain place.
+  - Display of restaurant locations. Eventually, it will be possible to choose location to find restaurants near a certain place.
 
   - A short presentation of the company.
   
-  - A section containing the 4 menus in the form of cards. By clicking on the map,
-  t he user is redirected to the menu page.
+  - A section containing the 4 menus in the form of cards. By clicking on the map, the user is redirected to the menu page.
 
 **Menu Pages (x4):**
 
@@ -44,34 +42,19 @@ on hover or on click, we have the opposite effect when exiting the hover.
 
 **Buttons:**
 
-  - On hover, the background color of the main buttons should lighten slightly.
-  The drop shadow should also be more visible.
+  - On hover, the background color of the main buttons should lighten slightly. The drop shadow should also be more visible.
 
-  - Eventually, visitors will be able to save their favorite menus. For that, a
-  heart-shaped "Like" button is present on the model. On click, it will have to
-  fill gradually. For this first version, the effect can appear at
-  hover on desktop instead of click.
+  - Eventually, visitors will be able to save their favorite menus. For that, a heart-shaped "Like" button is present on the model. On click, it will have to fill gradually. For this first version, the effect can appear at hover on desktop instead of click.
 
 **Home page:**
 
-  - When the application will have more menus, a “loader” will be necessary. On this
-  model, we want to get a glimpse of it. It will have to appear for 1 to 3
-  seconds when you get to the home page, cover the entire screen, and
-  use CSS animations (no library). The design of this loader is not defined,
-  any proposal is therefore welcome as long as it is consistent with the charter
-  website graphics.
+  - When the application will have more menus, a “loader” will be necessary. On this model, we want to get a glimpse of it. It will have to appear for 1 to 3 seconds when you get to the home page, cover the entire screen, and use CSS animations (no library). The design of this loader is not defined, any proposal is therefore welcome as long as it is consistent with the charter website graphics.
 
 **Menu pages:**
 
-  - Upon arrival on the page, the dishes should appear gradually with a slight
-  time lag. They can appear either one by one or in groups
-  "Starter, main course and dessert".
+  - Upon arrival on the page, the dishes should appear gradually with a slight time lag. They can appear either one by one or in groups "Starter, main course and dessert".
 
-  - The visitor can add the dishes he wants to his order by clicking on them.
-  This brings up a small checkmark to the right of the dish. This tick will have to slide from
-  right to left. For this first version, the effect can appear on hover
-  on desktop instead of click. If the title of the dish is too long, it will have to be trimmed with
-  suspension points.
+  - The visitor can add the dishes he wants to his order by clicking on them. This brings up a small checkmark to the right of the dish. This tick will have to slide from right to left. For this first version, the effect can appear on hover on desktop instead of click. If the title of the dish is too long, it will have to be trimmed with suspension points.
 
 
 

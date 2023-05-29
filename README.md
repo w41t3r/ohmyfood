@@ -77,7 +77,6 @@ on hover or on click, we have the opposite effect when exiting the hover.
   suspension points.
 
 
-
 ### Mobile model:
 
 Homepage:
@@ -96,4 +95,5 @@ Homepage:
 ![Homepage](https://user-images.githubusercontent.com/35102946/235378483-67b1e97e-be1c-4437-87d1-6107f74710bb.png)
 
 Restaurant model:
+
 ![Menu La palette du gout](https://user-images.githubusercontent.com/35102946/235378493-38732b57-ef19-4eb4-8f68-8a5943d73fd0.png)

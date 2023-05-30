@@ -249,7 +249,7 @@
   font-size: 22px;
   letter-spacing: 0.5px;
 }
-#restaurants .card-link {
+#restaurants .restaurant__link {
   background-color: #FFFFFF;
   border-radius: 20px;
   display: flex;
@@ -258,19 +258,19 @@
   height: 250px;
   margin-top: 15px;
 }
-#restaurants .card-link .card {
+#restaurants .restaurant__link .restaurant__card {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-#restaurants .card-link .card img {
+#restaurants .restaurant__link .restaurant__card img {
   object-fit: cover;
   height: 170px;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-#restaurants .card-link .card .new-restaurant {
+#restaurants .restaurant__link .restaurant__card--new {
   background-color: #99E2D0;
   color: #008766;
   font-family: "Roboto";
@@ -287,40 +287,42 @@
   position: absolute;
   z-index: 1;
 }
-#restaurants .card-link .card .card-content {
+#restaurants .restaurant__link .restaurant__card .restaurant__description {
   display: flex;
   flex-direction: row;
   height: 70px;
 }
-#restaurants .card-link .card .card-content .card-txt {
+#restaurants .restaurant__link .restaurant__card .restaurant__description--txt {
   padding-left: 10px;
   width: 80%;
   height: 100%;
 }
-#restaurants .card-link .card .card-content .card-txt .card-title {
+#restaurants .restaurant__link .restaurant__card .restaurant__description--title {
   font-size: 17px;
   letter-spacing: 0.5px;
   padding-top: 15px;
   padding-bottom: 5px;
 }
-#restaurants .card-link .card .card-content .heart__icon {
+#restaurants .restaurant__link .restaurant__card .restaurant__description .heart__icon {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 25px;
   height: 28px;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
-#restaurants .card-link .card .card-content .heart__icon:hover {
-  background: linear-gradient(to left top, #9356DC, #FF79DA);
-  color: linear-gradient(to left top, #9356DC, #FF79DA);
+#restaurants .restaurant__link .restaurant__card .restaurant__description .heart__icon:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to left top, #9356DC, #FF79DA);
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  color: transparent;
   font-weight: bold;
+  transition: all 2s;
 }
 
 /*###########################*/

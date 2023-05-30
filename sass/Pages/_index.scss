@@ -60,7 +60,7 @@
             }
         }
 
-        @-webkit-keyframes display-loader{
+        @-webkit-keyframes display-loader {
             0% {
                 z-index: 10;
                 opacity: 1;
@@ -76,7 +76,7 @@
             }
         }
 
-        @keyframes display-loader{
+        @keyframes display-loader {
             0% {
                 z-index: 10;
                 opacity: 1;
@@ -277,7 +277,7 @@
         letter-spacing: .5px;
     }
 
-    .card-link {
+    .restaurant__link {
         background-color: #FFFFFF;
         border-radius: 20px;
         display: flex;
@@ -286,7 +286,7 @@
         height: 250px;
         margin-top: 15px;
 
-        .card {
+        .restaurant__card {
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -299,7 +299,7 @@
                 border-top-right-radius: 20px;
             }
 
-            .new-restaurant {
+            &--new {
                 background-color: $bg-new-restaurant;
                 color: $text-color-new-restaurant;
                 font-family: $text-font;
@@ -317,23 +317,24 @@
                 z-index: 1;
             }
 
-            .card-content {
+            .restaurant__description {
                 display: flex;
                 flex-direction: row;
                 height: 70px;
 
-                .card-txt {
+                &--txt {
                     padding-left: 10px;
                     width: 80%;
                     height: 100%;
-
-                    .card-title {
-                        font-size: 17px;
-                        letter-spacing: .5px;
-                        padding-top: 15px;
-                        padding-bottom: 5px;
-                    }
                 }
+
+                &--title {
+                    font-size: 17px;
+                    letter-spacing: .5px;
+                    padding-top: 15px;
+                    padding-bottom: 5px;
+                }
+
 
                 .heart__icon {
                     display: flex;
@@ -342,24 +343,23 @@
                     font-size: 25px;
                     height: 28px;
                     margin-top: 20px;
-                    margin-left: 20px;
+                    margin-left: 10px;
 
                     &:hover {
-                        background: linear-gradient(to left top, $primary-color, $secondary-color);
-                        color: linear-gradient(to left top, $primary-color, $secondary-color);
+                        cursor: pointer;
+                        background-image: linear-gradient(to left top, $primary-color, $secondary-color);
+                        -moz-background-clip: text;
+                        -moz-text-fill-color: transparent;
                         -webkit-background-clip: text;
                         background-clip: text;
                         -webkit-text-fill-color: transparent;
-                        -moz-background-clip: text;
-                        -moz-text-fill-color: transparent;
+                        color: transparent;
                         font-weight: bold;
-
-
+                        transition: all 2s;
                     }
-
                 }
-            }
 
+            }
         }
     }
 }

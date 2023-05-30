@@ -227,7 +227,7 @@
                 margin-left: -17px;
             }
 
-            .container__icon {
+            .icon__container {
                 display: flex;
                 justify-content: center;
                 height: 20px;
@@ -302,11 +302,12 @@
             &--new {
                 background-color: $bg-new-restaurant;
                 color: $text-color-new-restaurant;
+                border-radius: 2px;
                 font-family: $text-font;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-left: 60%;
+                margin-left: 65%;
                 width: 80px;
                 height: 30px;
                 margin-top: 10px;
@@ -334,7 +335,6 @@
                     padding-top: 15px;
                     padding-bottom: 5px;
                 }
-
 
                 .heart__icon {
                     display: flex;
@@ -409,7 +409,7 @@
         font-size: 15px;
         margin: 4px;
 
-        .container__icon {
+        .icon__container {
             display: flex;
             justify-content: flex-start;
             height: 20px;

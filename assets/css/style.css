@@ -6,6 +6,19 @@
 /*##################*/
 /*##### COLORS #####*/
 /*##################*/
+.primary__button {
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  font-family: "Roboto";
+  margin-top: 30px;
+  margin-bottom: 25px;
+  padding: 15px 45px 15px 45px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #FFFFFF;
+  font-size: 15px;
+  border: none;
+}
+
 /*##################*/
 /*##### LOADER #####*/
 /*##################*/
@@ -146,15 +159,6 @@
   text-align: center;
   margin-top: 15px;
   font-size: 18px;
-}
-.presentation .link__restaurants {
-  background: linear-gradient(to left top, #9356DC, #FF79DA);
-  font-family: "Roboto";
-  margin-top: 30px;
-  margin-bottom: 25px;
-  padding: 15px 25px 15px 25px;
-  border-radius: 30px 30px 30px 30px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .presentation .link__restaurants:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 15px;
@@ -425,13 +429,13 @@
     width: 100%;
     margin-left: 0;
   }
-  #restaurants .card-link {
+  #restaurants .restaurant__link {
     width: 45%;
   }
-  #restaurants .card-link .card .new-restaurant {
+  #restaurants .restaurant__link .restaurant__card--new {
     margin-left: 28%;
   }
-  #restaurants .card-link .card .card-content .card-icon {
+  #restaurants .restaurant__link .restaurant__card .restaurant__description .heart__icon {
     margin-left: 30px;
   }
   /*##################*/
@@ -441,6 +445,7 @@
     flex-direction: row-reverse;
     height: 85px;
     padding: 0;
+    bottom: 0;
   }
   .footer .footer__title {
     width: 240px;
@@ -668,18 +673,6 @@
 .menu .order__button__container {
   display: flex;
   justify-content: center;
-}
-.menu .order__button__container .order__button {
-  background: linear-gradient(to left top, #9356DC, #FF79DA);
-  font-family: "Roboto";
-  margin-top: 30px;
-  margin-bottom: 25px;
-  padding: 15px 45px 15px 45px;
-  border-radius: 30px 30px 30px 30px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  color: #FFFFFF;
-  font-size: 15px;
-  border: none;
 }
 .menu .order__button__container .order__button:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 15px;

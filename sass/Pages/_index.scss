@@ -159,13 +159,6 @@
     }
 
     & .link__restaurants {
-        background: linear-gradient(to left top, $primary-color, $secondary-color);
-        font-family: $text-font;
-        margin-top: 30px;
-        margin-bottom: 25px;
-        padding: 15px 25px 15px 25px;
-        border-radius: 30px 30px 30px 30px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
         &:hover {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 15px;
@@ -246,8 +239,6 @@
                 }
             }
         }
-
-
     }
 }
 
@@ -358,7 +349,6 @@
                         transition: all 2s;
                     }
                 }
-
             }
         }
     }
@@ -485,18 +475,19 @@
             margin-left: 0;
         }
 
-        .card-link {
+        .restaurant__link {
             width: 45%;
 
-            .card {
-                .new-restaurant {
+            .restaurant__card {
+
+                &--new {
                     margin-left: 28%;
 
                 }
 
-                .card-content {
+                .restaurant__description {
 
-                    .card-icon {
+                    .heart__icon {
                         margin-left: 30px;
                     }
                 }
@@ -512,6 +503,7 @@
         flex-direction: row-reverse;
         height: 85px;
         padding: 0;
+        bottom: 0;
 
         .footer__title {
             width: 240px;

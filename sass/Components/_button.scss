@@ -1,0 +1,12 @@
+.primary__button {
+    background: linear-gradient(to left top, $primary-color, $secondary-color);
+    font-family: $text-font;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding: 15px 45px 15px 45px;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #FFFFFF;
+    font-size: 15px;
+    border: none;
+}

@@ -4,20 +4,6 @@
 /*#############################*/
 /*#############################*/
 
-.header {
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
-
-    .back-arrow {
-        margin-left: -75px;
-        color: $back-arrow-color;
-        font-size: 20px;
-    }
-}
-
 .container__img {
     height: 260px;
     margin-bottom: -50px;
@@ -243,24 +229,6 @@
     /*#############################*/
     /*#############################*/
 
-    .header {
-        height: 80px;
-
-        .back-arrow {
-            margin-left: 0;
-            left: 20px;
-            top: 40px;
-            position: absolute;
-            color: $back-arrow-color;
-            font-size: 20px;
-        }
-
-        &__logo {
-            height: 35px;
-            width: 200px;
-        }
-    }
-
     .container__img {
         height: 390px;
 
@@ -268,7 +236,6 @@
             object-fit: fill;
             height: 100%;
             width: 100%;
-
         }
     }
 
@@ -290,7 +257,6 @@
                 height: 28px;
                 margin-top: 8px;
                 margin-left: 40px;
-
             }
         }
 

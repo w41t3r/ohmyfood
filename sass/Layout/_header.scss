@@ -1,0 +1,67 @@
+/*##################*/
+/*##### HEADER #####*/
+/*##################*/
+
+.header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+
+    &__logo {
+        width: 170px;
+        height: 30px;
+    }
+}
+
+/*#############################*/
+/*#############################*/
+/*##### RESTAURANTS PAGES #####*/
+/*#############################*/
+/*#############################*/
+
+.header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+
+    .back-arrow {
+        margin-left: -75px;
+        color: $back-arrow-color;
+        font-size: 20px;
+    }
+}
+
+/**************************************************** Media queries ****************************************************/
+
+/***************************** Large devices (desktop, more/equal than 1024px) *****************************/
+
+@media all and (min-width: 1024px) {
+
+    /*#############################*/
+    /*#############################*/
+    /*##### RESTAURANTS PAGES #####*/
+    /*#############################*/
+    /*#############################*/
+
+    .header {
+        height: 80px;
+
+        .back-arrow {
+            margin-left: 0;
+            left: 20px;
+            top: 40px;
+            position: absolute;
+            color: $back-arrow-color;
+            font-size: 20px;
+        }
+
+        &__logo {
+            height: 35px;
+            width: 200px;
+        }
+    }
+}

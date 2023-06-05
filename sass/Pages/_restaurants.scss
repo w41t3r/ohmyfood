@@ -38,7 +38,7 @@
     h1 {
         font-family: $logo-and-titles-font;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 28px;
         margin-left: 10px;
     }
 
@@ -135,7 +135,6 @@
             transition: all 0.7s ease-in-out;
 
             &__icon {
-                scale: 0;
                 transform: translateX(0%);
                 color: $tertiary-color;
                 border-radius: 25px;
@@ -200,7 +199,6 @@
             transition: all 0.5s ease-in-out;
 
             &__icon {
-                scale: 1;
                 color: $tertiary-color;
                 border-radius: 25px;
                 padding: 3px;

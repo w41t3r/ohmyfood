@@ -48,6 +48,7 @@
             opacity: 0.6;
         }
 
+        /* keyframe loader rotation */
         @keyframes spin {
             0% {
                 -webkit-transform: rotate(0deg);
@@ -60,6 +61,7 @@
             }
         }
 
+        /* keyframe loader display */
         @-webkit-keyframes display-loader {
             0% {
                 z-index: 10;

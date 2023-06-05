@@ -198,6 +198,8 @@
   border-bottom-color: #FF79DA;
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
+  /* keyframe loader rotation */
+  /* keyframe loader display */
 }
 .loader__element::after {
   content: "";
@@ -548,6 +550,11 @@
   padding-top: 20px;
   position: relative;
   z-index: 2;
+  /* keyframe progressive menu display */
+  /* first element display time */
+  /* second element display time */
+  /* third element display time */
+  /* fourth element display time */
 }
 .menu__title {
   display: flex;

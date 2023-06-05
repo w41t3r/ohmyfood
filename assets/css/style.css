@@ -566,7 +566,7 @@
 .menu h1 {
   font-family: "Shrikhand";
   font-weight: 500;
-  font-size: 30px;
+  font-size: 28px;
   margin-left: 10px;
 }
 .menu .heart__icon--restaurant {
@@ -654,7 +654,6 @@
   transition: all 0.7s ease-in-out;
 }
 .menu__item .selected__icon {
-  scale: 0;
   transform: translateX(0%);
   color: #99E2D0;
   border-radius: 25px;
@@ -702,7 +701,6 @@
   transition: all 0.5s ease-in-out;
 }
 .menu .menu__item:hover .selected__icon {
-  scale: 1;
   color: #99E2D0;
   border-radius: 25px;
   padding: 3px;

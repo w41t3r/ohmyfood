@@ -135,6 +135,7 @@
             transition: all 0.7s ease-in-out;
 
             &__icon {
+                opacity: 0;
                 transform: translateX(0%);
                 color: $tertiary-color;
                 border-radius: 25px;
@@ -199,6 +200,7 @@
             transition: all 0.5s ease-in-out;
 
             &__icon {
+                opacity: 1;
                 color: $tertiary-color;
                 border-radius: 25px;
                 padding: 3px;

@@ -451,6 +451,8 @@
   height: 28px;
   margin-top: 20px;
   margin-left: 10px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 #restaurants .restaurant__link .restaurant__card .restaurant__description .heart__icon:hover {
   cursor: pointer;
@@ -462,6 +464,7 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-weight: bold;
+  -webkit-transition: all 2s;
   transition: all 2s;
 }
 

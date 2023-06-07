@@ -42,23 +42,41 @@
         margin-left: 10px;
     }
 
-    .heart__icon--restaurant {
-        font-size: 25px;
-        height: 28px;
-        margin-top: 8px;
-        margin-right: 30px;
+    .heart__container {
+        position: relative;
+        padding: 10px;
+        border: 0px;
+
+        .heart__icon {
+            position: absolute;
+            opacity: 1;
+            transition: opacity 1500ms;
+            font-size: 25px;
+            right: 8px;
+
+            &--purple {
+                position: absolute;
+                color: transparent;
+                background-clip: text;
+                background-image: linear-gradient(to left top, $primary-color, $secondary-color);
+                opacity: 0;
+                transform: scale(0);
+                transition: all 500ms;
+                right: 8px;
+                font-size: 25px;
+            }
+        }
 
         &:hover {
-            cursor: pointer;
-            background-image: linear-gradient(to left top, $primary-color, $secondary-color);
-            -moz-background-clip: text;
-            -moz-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: transparent;
-            font-weight: bold;
-            transition: all 2s;
+            .heart__icon {
+                opacity: 0;
+
+                &--purple {
+                    opacity: 1;
+                    transform: scale(1);
+                    transform-origin: bottom;
+                }
+            }
         }
     }
 
@@ -215,10 +233,19 @@
         display: flex;
         justify-content: center;
 
-            .order__button:hover {
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 15px;
+        .order__button {
+            -moz-transition: box-shadow 2s, background-image 2s;
+            -webkit-transition: box-shadow 2s, background-image 2s;
+            transition: box-shadow 2s, background-image 2s;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.34) 0px 10px 15px;
                 @include btn-lightening();
+                -moz-transition: box-shadow 2s, background-image 2s;
+                -webkit-transition: box-shadow 2s, background-image 2s;
+                transition: box-shadow 2s, background-image 2s;
             }
+        }
     }
 }
 
@@ -257,11 +284,40 @@
                 margin-left: 25px;
             }
 
-            .heart__icon--restaurant {
-                font-size: 25px;
-                height: 28px;
-                margin-top: 8px;
-                margin-left: 40px;
+            .heart__container {
+                position: relative;
+                padding: 10px;
+                border: 0px;
+                width: 30px;
+
+                .heart__icon {
+                    position: absolute;
+                    opacity: 1;
+                    transition: opacity 1500ms;
+                    font-size: 25px;
+
+                    &--purple {
+                        position: absolute;
+                        color: transparent;
+                        background-clip: text;
+                        background-image: linear-gradient(to left top, $primary-color, $secondary-color);
+                        opacity: 0;
+                        transform: scale(0);
+                        transition: all 500ms;
+                    }
+                }
+
+                &:hover {
+                    .heart__icon {
+                        opacity: 0;
+
+                        &--purple {
+                            opacity: 1;
+                            transform: scale(1);
+                            transform-origin: bottom;
+                        }
+                    }
+                }
             }
         }
 

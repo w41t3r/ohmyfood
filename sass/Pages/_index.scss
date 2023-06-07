@@ -145,9 +145,16 @@
 
     & .link__restaurants {
 
+        -moz-transition: box-shadow 2s, background-image 2s;
+        -webkit-transition: box-shadow 2s, background-image 2s;
+        transition: box-shadow 2s, background-image 2s;
+
         &:hover {
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 15px;
+            box-shadow: rgba(0, 0, 0, 0.34) 0px 10px 15px;
             @include btn-lightening();
+            -moz-transition: box-shadow 2s, background-image 2s;
+            -webkit-transition: box-shadow 2s, background-image 2s;
+            transition: box-shadow 2s, background-image 2s;
         }
 
         .link__text {
@@ -212,7 +219,6 @@
                 width: 40px;
                 margin-right: 10px;
                 margin-left: 10px;
-
             }
 
             .functioning__icon {
@@ -312,29 +318,40 @@
                     padding-bottom: 5px;
                 }
 
-                .heart__icon {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 25px;
-                    height: 28px;
-                    margin-top: 20px;
-                    margin-left: 10px;
-                    -webkit-transition: all 2s;
-                    transition: all 2s;
+                .heart__container {
+                    position: relative;
+                    padding: 10px;
+                    border: 0px;
+
+                    .heart__icon {
+                        position: absolute;
+                        opacity: 1;
+                        transition: opacity 1500ms;
+                        font-size: 25px;
+
+                        &--purple {
+                            position: absolute;
+                            color: transparent;
+                            background-clip: text;
+                            background-image: linear-gradient(to left top, $primary-color, $secondary-color);
+                            opacity: 0;
+                            transform: scale(0);
+                            transition: all 500ms;
+
+                            font-size: 25px;
+                        }
+                    }
 
                     &:hover {
-                        cursor: pointer;
-                        background-image: linear-gradient(to left top, $primary-color, $secondary-color);
-                        -moz-background-clip: text;
-                        -moz-text-fill-color: transparent;
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        color: transparent;
-                        font-weight: bold;
-                        -webkit-transition: all 2s;
-                        transition: all 2s;
+                        .heart__icon {
+                            opacity: 0;
+
+                            &--purple {
+                                opacity: 1;
+                                transform: scale(1);
+                                transform-origin: bottom;
+                            }
+                        }
                     }
                 }
             }
@@ -416,8 +433,44 @@
 
                 .restaurant__description {
 
-                    .heart__icon {
-                        margin-left: 30px;
+  
+                    .heart__container {
+                        position: relative;
+                        padding: 10px;
+                        border: 0px;
+    
+                        .heart__icon {
+                            margin-left: 30px;
+                            position: absolute;
+                            opacity: 1;
+                            transition: opacity 1500ms;
+                            font-size: 25px;
+                            left: -10px;
+    
+                            &--purple {
+                                position: absolute;
+                                color: transparent;
+                                background-clip: text;
+                                background-image: linear-gradient(to left top, $primary-color, $secondary-color);
+                                opacity: 0;
+                                transform: scale(0);
+                                transition: all 500ms;
+                                left: 20px;
+                                font-size: 25px;
+                            }
+                        }
+    
+                        &:hover {
+                            .heart__icon {
+                                opacity: 0;
+    
+                                &--purple {
+                                    opacity: 1;
+                                    transform: scale(1);
+                                    transform-origin: bottom;
+                                }
+                            }
+                        }
                     }
                 }
             }

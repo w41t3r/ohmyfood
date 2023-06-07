@@ -1,3 +1,4 @@
 @mixin btn-lightening {
+    background-image: -webkit-linear-gradient(to left top, lighten($primary-color, 5%), lighten($secondary-color, 5%));
     background-image: linear-gradient(to left top, lighten($primary-color, 5%), lighten($secondary-color, 5%));
 }

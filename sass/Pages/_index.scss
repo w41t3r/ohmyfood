@@ -325,16 +325,23 @@
                     .heart__icon {
                         position: absolute;
                         opacity: 1;
+                        -moz-transition: opacity 1500ms;
+                        -webkit-transition: opacity 1500ms;
                         transition: opacity 1500ms;
                         font-size: 25px;
 
                         &--purple {
                             position: absolute;
                             color: transparent;
+                            -webkit-background-clip: text;
                             background-clip: text;
                             background-image: linear-gradient(to left top, $primary-color, $secondary-color);
                             opacity: 0;
+                            -moz-transform: scale(0);
+                            -webkit-transform: scale(0);
                             transform: scale(0);
+                            -moz-transition: opacity 500ms;
+                            -webkit-transition: opacity 500ms;
                             transition: all 500ms;
                             font-size: 25px;
                         }
@@ -431,12 +438,12 @@
 
                 .restaurant__description {
 
-  
+
                     .heart__container {
                         position: relative;
                         padding: 10px;
                         border: 0px;
-    
+
                         .heart__icon {
                             margin-left: 30px;
                             position: absolute;
@@ -444,7 +451,7 @@
                             transition: opacity 1500ms;
                             font-size: 25px;
                             left: -10px;
-    
+
                             &--purple {
                                 position: absolute;
                                 color: transparent;
@@ -457,11 +464,11 @@
                                 font-size: 25px;
                             }
                         }
-    
+
                         &:hover {
                             .heart__icon {
                                 opacity: 0;
-    
+
                                 &--purple {
                                     opacity: 1;
                                     transform: scale(1);

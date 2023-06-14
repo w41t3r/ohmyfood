@@ -6,7 +6,7 @@
 
 ### Mission:
 
-Your mission is to develop a “mobile first” site that lists the menus of gourmet restaurants. In addition to traditional reservation systems, customers will be able to compose their meal menu so that the dishes are ready when they arrive. No more waiting times at the restaurant!The sales team has already succeeded in convincing 4 restaurateurs to use the OhMyFood platform. Paul then decides that the site will initially contain 4 menus.
+Your mission is to develop a “mobile first” site that lists the menus of gourmet restaurants. In addition to traditional reservation systems, customers will be able to compose their meal menu so that the dishes are ready when they arrive. No more waiting times at the restaurant!The sales team has already succeeded in convincing 4 restorers to use the OhMyFood platform. Paul then decides that the site will initially contain 4 menus.
 
 ### Expected deliverables:
 

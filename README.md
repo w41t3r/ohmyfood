@@ -1,4 +1,4 @@
-# ohmyfood
+# OHMYFOOD
 
 ## Fourth project of the OpenClassrooms "web integrator" training
 
